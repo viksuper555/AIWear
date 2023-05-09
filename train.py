@@ -45,6 +45,7 @@ model.fit(train_images, train_labels, epochs=10)
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
 print('\nTest accuracy:', test_acc)
+#This gap between training accuracy and test_acc represents overfitting.
 
 
 probability_model = tf.keras.Sequential([model, 
